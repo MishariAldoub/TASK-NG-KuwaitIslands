@@ -1,1 +1,5 @@
-<div class="island-list">THERE IS A LIST</div>
+<div class="island-list">
+  @for (island of islands; track island.id) {
+  <app-island-card [island]="island"></app-island-card>
+  }
+</div>
