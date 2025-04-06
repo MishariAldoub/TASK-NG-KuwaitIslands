@@ -9,7 +9,7 @@ const islands = [
   {
     id: 1,
     name: 'Failaka',
-    img: 'https://www.gckuwait.com/wp-content/uploads/2017/01/gulf-consult-Failaka-Island-Master-Plan1-1.jpg',
+    img: 'https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/07/90/7a/07.jpg',
     visitors: 0,
   },
   {
@@ -39,7 +39,7 @@ const islands = [
   {
     id: 6,
     name: 'Kubbar',
-    img: 'https://kuwaitlocal.com/js/kcfinder/upload/images/Boat%20Trip%20To%20Kubbar%20Island9.jpg',
+    img: 'https://vanakkamgulf.com/wp-content/uploads/2023/07/kub1.jpg',
     visitors: 0,
   },
   {
