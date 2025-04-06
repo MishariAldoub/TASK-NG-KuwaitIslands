@@ -14,4 +14,17 @@ import { IslandListComponent } from '../island-list/island-list.component';
 })
 export class LayoutComponent {
   islands = islands;
+  filteredIslands = islands;
+
+  filterIslands(search: string) {
+    console.log(search);
+    if (!search) {
+      this.filteredIslands = this.islands;
+      return;
+    }
+
+    this.filteredIslands = this.islands.filter((island) =>
+      island.name.toLowerCase().includes(search.toLowerCase())
+    );
+  }
 }
