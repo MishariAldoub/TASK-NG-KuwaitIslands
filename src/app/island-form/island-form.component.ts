@@ -1,12 +1,12 @@
 import { Component, Input } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { FormsModule, NgForm } from '@angular/forms';
 
 import { Island } from '../../data/islands';
 
 @Component({
   selector: 'app-island-form',
   standalone: true,
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './island-form.component.html',
   styleUrl: './island-form.component.css',
 })
