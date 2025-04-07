@@ -19,7 +19,7 @@ export class IslandFormComponent {
       `Confirm booking ${this.island.name} for ${name} with phone number ${phone}`
     );
     if (confirmed) {
-      this.island.visitors++;
+      this.island.visitors.push({ name, phone });
       form.reset();
     }
   }
