@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 
 import { Island } from '../../data/islands';
@@ -14,6 +14,13 @@ export class IslandFormComponent {
   @Input() island!: Island;
 
   bookTrip(form: NgForm) {
-    console.log(form.value);
+    const { name, phone } = form.value;
+    const confirmed = confirm(
+      `Confirm booking ${this.island.name} for ${name} with phone number ${phone}`
+    );
+    if (confirmed) {
+      this.island.visitors++;
+      form.reset();
+    }
   }
 }
