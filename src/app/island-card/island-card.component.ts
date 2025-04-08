@@ -14,7 +14,7 @@ export class IslandCardComponent {
   @Output() selectIsland = new EventEmitter<Island>();
   visitorCounter = 0;
   onSelect() {
-    this.visitorCounter++;
+    // this.visitorCounter++;
     this.island.visitors = this.visitorCounter;
     this.selectIsland.emit(this.island);
     console.log(this.visitorCounter);
